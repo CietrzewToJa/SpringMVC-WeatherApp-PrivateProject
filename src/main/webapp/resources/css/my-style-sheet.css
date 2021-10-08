@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+body {
+	background-color: #f5eec2;
+	color: #416a59;
+	font-size: 12px;
+	margin: 0;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Anton', sans-serif;
+	font-size: 100px;
+	text-transform: uppercase;
+	margin: 30vh 0% 1% 0%;
+}
+
+h2 {
+	text-align: center;
+	font-family: 'Anton', sans-serif;
+	text-transform: uppercase;
+	font-weight: 1000;
+}
+
+
+.go-field {
+	padding: 0;
+}
+
+.search-field {
+	padding: 0;
+}
+
+.play-button {
+	background-color: #73a24e;
+	padding: 0;
+	height: 100%;
+	width: 40px;
+	border-radius: 0px 4px 4px 0px;
+}
+
+.form-control {
+	border-radius: 4px 0px 0px 4px;
+	border-right-color: white;
+}
+
+thead {
+	font-weight: bold;
+	text-align: center;
+}
+
+.base {
+	background-color: #416a59;
+	color: white;
+}
+
+.dark {
+	color: #a9c25d;
+}
+
+.section {
+	height: 100vh;
+	padding: 0;
+	padding: 10vh 0% 0% 0%;
+	font-size: 3vh;
+}
+
+.left-column {
+	text-align: right;
+	padding-right: 4vh;
+}
+
+.weather-section td {
+	width: 50%;
+}
+

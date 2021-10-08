@@ -5,8 +5,8 @@ public class WeatherMain {
     private float feels_like;
     private float temp_min;
     private float temp_max;
-    private int pressure;
-    private int humidity;
+    private float pressure;
+    private float humidity;
 
     public float getTemp() {
         return temp;
@@ -40,20 +40,20 @@ public class WeatherMain {
         this.temp_max = temp_max;
     }
 
-    public int getPressure() {
+    public float getPressure() {
         return pressure;
     }
 
-    public void setPressure(int pressure) {
+    public void setPressure(float pressure) {
         this.pressure = pressure;
     }
 
-    public int getHumidity() {
+    public float getHumidity() {
         return humidity;
     }
 
-    public void setHumidity(int humidity) {
-        this.humidity = humidity;
+    public void setHumidity(float f) {
+        this.humidity = f;
     }
 
     @Override

@@ -11,6 +11,7 @@ import org.springframework.stereotype.Repository;
 
 import com.cietrzew.wp.api.Weather;
 import com.cietrzew.wp.rowmapper.WeatherRowMapper;
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @Repository
@@ -31,25 +32,52 @@ public class WeatherDAOImpl implements WeatherDAO {
 		}
 		
 		ObjectMapper objectMapper = new ObjectMapper();
+		objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+		
 		try {
 			weather = objectMapper.readValue(url, Weather.class);
 		} catch (IOException e) {
-			e.printStackTrace();
+			weather = null;
+			return weather;
+			// e.printStackTrace();
 		}
-		
-		System.out.println("Loaded");
-		
+				
 		return weather;
 	}
 
 	@Override
-	public List<Weather> loadWeather() {
+	public List<Weather> loadWeather(String location) {
 		
-		String sql = "SELECT * FROM weather";
+		String sql = "SELECT * FROM weather WHERE city='" + location + "'";
 		
 		List<Weather> theListOfWeather = jdbcTemplate.query(sql, new WeatherRowMapper());
 		
 		return theListOfWeather;
+	}
+
+	@Override
+	public void saveWeather(Weather weather) {
+
+		System.out.println(weather.getDate());
+		
+		Object[] sqlParameters = { weather.getDate(), 
+				weather.getWeather()[0].getDescription(), 
+				weather.getMain().getTemp(), 
+				weather.getMain().getFeels_like(), 
+				weather.getMain().getPressure(), 
+				weather.getMain().getHumidity(), 
+				weather.getWind().getSpeed(), 
+				weather.getRain().getOneHour(), 
+				weather.getSnow().getOneHour(), 
+				weather.getCity() };
+		
+		String sql = "INSERT INTO weather (date, sky, temp, feels_like, pressure, humidity, wind, rain, snow, city) VALUES(?,?,?,?,?,?,?,?,?,?)";
+		
+		int n = jdbcTemplate.update(sql, sqlParameters);
+		
+		System.out.print(n + " ");
+		
+		System.out.println("Data Saved.");
 	}
 
 }

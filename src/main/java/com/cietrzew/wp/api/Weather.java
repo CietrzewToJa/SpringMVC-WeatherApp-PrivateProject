@@ -18,7 +18,22 @@ public class Weather {
     String name;
     WeatherRain rain;
     WeatherSnow snow;
+    String city;
     
+    public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+	String date;
+    
+	public String getDate() {
+		return date;
+	}
+	public void setDate(String date) {
+		this.date = date;
+	}
 	public WeatherCoord getCoord() {
 		return coord;
 	}
