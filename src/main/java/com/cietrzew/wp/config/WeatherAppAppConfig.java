@@ -41,7 +41,7 @@ public class WeatherAppAppConfig implements WebMvcConfigurer {
 		
 		dataSource.setUsername("root");
 		dataSource.setPassword("root");
-		dataSource.setUrl("jdbc:mysql://localhost:3306/cietrzew?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC");
+		dataSource.setUrl("jdbc:mysql://localhost:3306/weather?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC");
 		dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
 	
 		return dataSource;

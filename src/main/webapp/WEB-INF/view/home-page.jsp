@@ -12,15 +12,12 @@
 	rel="stylesheet"
 	integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
 	crossorigin="anonymous">
-<link rel="stylesheet" type="text/css"
-	href="/weather-app/URLToReachResourcesFolder/css/my-style-sheet.css">
+<link rel="stylesheet" type="text/css" href="URLToReachResourcesFolder/css/my-style-sheet.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
 	rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	
-
 
 <title>Check the weather</title>
 </head>
@@ -37,7 +34,7 @@
 				<form:input path="city" class="form-control" placeholder="Enter city here"></form:input>
 			</div>
 			<div class="col-auto go-field">
-				<button type="submit" class="btn btn-success play-button">
+				<button type="submit" class="btn btn-success play-button right-field">
 					<i class="material-icons d-flex justify-content-center">play_arrow</i>
 				</button>
 			</div>

@@ -20,6 +20,10 @@ public class WeatherServiceImpl implements WeatherService {
 	public Weather loadWeatherFromAPI(String location) {
 		
 		Weather weather = weatherDAO.loadWeatherFromAPI(location);
+
+		if(weather == null) {
+			return null;
+		}
 		
 		SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 		Date date = new Date(System.currentTimeMillis());

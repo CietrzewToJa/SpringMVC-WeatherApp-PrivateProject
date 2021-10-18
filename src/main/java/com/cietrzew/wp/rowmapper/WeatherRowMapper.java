@@ -30,7 +30,7 @@ public class WeatherRowMapper implements RowMapper<Weather> {
 		WeatherMain weatherMain = new WeatherMain();
 		weatherMain.setTemp(rs.getFloat("temp"));
 		weatherMain.setFeels_like(rs.getFloat("feels_like"));
-		weatherMain.setHumidity(rs.getFloat("pressure"));
+		weatherMain.setPressure(rs.getFloat("pressure"));
 		weatherMain.setHumidity(rs.getFloat("humidity"));
 		weather.setMain(weatherMain);
 
@@ -56,11 +56,10 @@ public class WeatherRowMapper implements RowMapper<Weather> {
 			e1.printStackTrace();
 		}
 		sdf.applyPattern("dd-MM-yyyy HH:mm:ss");
-		
+
 		weather.setDate(sdf.format(d));
-		
 		weather.setCity(rs.getString("city"));
-						
+
 		return weather;
 	}
 

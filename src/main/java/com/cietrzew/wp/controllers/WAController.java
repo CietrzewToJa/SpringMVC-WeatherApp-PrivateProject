@@ -40,6 +40,8 @@ public class WAController {
 		weather = weatherService.loadWeatherFromAPI(weather.getCity());
 
 		if (weather == null) {
+			System.out.println("NO!");
+
 			return "redirect:/";
 		}
 
@@ -48,6 +50,10 @@ public class WAController {
 		List<Weather> weatherList = weatherService.loadWeather(weather.getCity());
 		model.addAttribute("weatherList", weatherList);
 		model.addAttribute("weather", weather);
+
+		for(var we : weatherList) {
+			System.out.println(we.getMain().getPressure());
+		}
 
 		return "show-weather";
 	}
