@@ -9,7 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f611039a-20c2-4935-9beb-2b81e8cf1b87" name="Changes" comment="procfile" />
+    <list default="true" id="f611039a-20c2-4935-9beb-2b81e8cf1b87" name="Changes" comment="procfile">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/weather_app_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/weather_app_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/config/WeatherAppAppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/config/WeatherAppAppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -170,7 +176,7 @@
       <option name="presentableId" value="Default" />
       <updated>1633679902060</updated>
       <workItem from="1633679903914" duration="701000" />
-      <workItem from="1634117540737" duration="30104000" />
+      <workItem from="1634117540737" duration="30523000" />
     </task>
     <task id="LOCAL-00001" summary="ver and var">
       <created>1634550992497</created>
@@ -214,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634556490154</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="procfile">
+      <created>1634557215689</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1634557215689</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

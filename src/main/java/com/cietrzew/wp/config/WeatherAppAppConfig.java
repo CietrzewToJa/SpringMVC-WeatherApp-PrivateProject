@@ -12,6 +12,8 @@ import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
+import java.net.URI;
+
 @EnableWebMvc
 @Configuration
 @ComponentScan(basePackages = "com.cietrzew.wp")
@@ -36,14 +38,20 @@ public class WeatherAppAppConfig implements WebMvcConfigurer {
 	
 	@Bean
 	public DataSource dataSource() {
-		
+
+		URI dbUri = new URI(System.getenv("DATABASE_URL"));
+
+		String username = dbUri.getUserInfo().split(":")[0];
+		String password = dbUri.getUserInfo().split(":")[1];
+		String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath() + "?sslmode=require";
+
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
-		
-		dataSource.setUsername("root");
-		dataSource.setPassword("root");
-		dataSource.setUrl("jdbc:mysql://localhost:3306/weather?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC");
+
+		dataSource.setUsername(username);
+		dataSource.setPassword(password);
+		dataSource.setUrl(dbUrl);
 		dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-	
+
 		return dataSource;
 	}
 	
