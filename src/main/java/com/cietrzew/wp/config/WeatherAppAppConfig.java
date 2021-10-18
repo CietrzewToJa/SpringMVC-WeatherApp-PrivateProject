@@ -13,6 +13,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import java.net.URI;
+import java.net.URISyntaxException;
 
 @EnableWebMvc
 @Configuration
@@ -39,7 +40,12 @@ public class WeatherAppAppConfig implements WebMvcConfigurer {
 	@Bean
 	public DataSource dataSource() {
 
-		URI dbUri = new URI(System.getenv("DATABASE_URL"));
+		URI dbUri = null;
+		try {
+			dbUri = new URI(System.getenv("DATABASE_URL"));
+		} catch (URISyntaxException e) {
+			e.printStackTrace();
+		}
 
 		String username = dbUri.getUserInfo().split(":")[0];
 		String password = dbUri.getUserInfo().split(":")[1];
