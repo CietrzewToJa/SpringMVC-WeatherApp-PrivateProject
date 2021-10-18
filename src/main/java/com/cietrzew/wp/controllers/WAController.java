@@ -51,7 +51,7 @@ public class WAController {
 		model.addAttribute("weatherList", weatherList);
 		model.addAttribute("weather", weather);
 
-		for(var we : weatherList) {
+		for(Weather we : weatherList) {
 			System.out.println(we.getMain().getPressure());
 		}
 
