@@ -9,10 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f611039a-20c2-4935-9beb-2b81e8cf1b87" name="Changes" comment="data source">
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/config/WeatherAppAppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/config/WeatherAppAppConfig.java" afterDir="false" />
-    </list>
+    <list default="true" id="f611039a-20c2-4935-9beb-2b81e8cf1b87" name="Changes" comment="data source" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -172,7 +169,7 @@
       <option name="presentableId" value="Default" />
       <updated>1633679902060</updated>
       <workItem from="1633679903914" duration="701000" />
-      <workItem from="1634117540737" duration="30660000" />
+      <workItem from="1634117540737" duration="30995000" />
     </task>
     <task id="LOCAL-00001" summary="ver and var">
       <created>1634550992497</created>
@@ -230,7 +227,21 @@
       <option name="project" value="LOCAL" />
       <updated>1634557640683</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="data source">
+      <created>1634557774824</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1634557774824</updated>
+    </task>
+    <task id="LOCAL-00010" summary="data source">
+      <created>1634557969981</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1634557969981</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
