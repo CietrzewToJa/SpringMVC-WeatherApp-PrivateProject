@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+/* BODY */
+
+body {
+	background-color: #f5eec2;
+	color: #416a59;
+	font-size: 12px;
+}
+
+.row {
+	margin: 0 0 0 0;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Anton', sans-serif;
+	font-size: 100px;
+	text-transform: uppercase;
+	margin: 30vh 0% 1% 0%;
+}
+
+h2 {
+	text-align: center;
+	font-family: 'Anton', sans-serif;
+	text-transform: uppercase;
+	font-weight: 1000;
+	font-size: 3rem;
+	padding-top: 10vh;
+	margin-bottom: 5vh;
+}
+
+/* BUTTONS */
+
+.go-field {
+	padding: 0;
+}
+
+.search-field {
+	padding: 0;
+}
+
+.play-button {
+	background-color: #73a24e;
+	height: 100%;
+	width: 40px;
+}
+
+.left-field {
+	border-radius: 4px 0px 0px 4px;
+}
+
+.right-field {
+	border-radius: 0px 4px 4px 0px;
+}
+
+.return-button {
+	margin: 20px 0px 0px 20px;
+}
+
+.purple-button {
+	background-color: #39395f;
+}
+
+.buttons {
+	margin-top: 15vh;
+}
+
+.form-control {
+	border-radius: 20px 0px 0px 20px;
+	border-right-color: white;
+}
+
+.menu-button {
+	width: 60px;
+	height: 50px;
+}
+
+/* TABLE */
+
+thead {
+	font-weight: bold;
+	text-align: center;
+	color: #a9c25d;
+}
+
+.table {
+	text-align: center;
+	color: #a9c25d;
+	border-color: #416a59;
+	margin-bottom: 10vh;
+	font-size: 1.3rem;
+}
+
+.weather-section td {
+	width: 250px;
+	padding-right: 8px;
+	padding-left: 8px;
+}
+
+.left-column {
+	text-align: right;
+	/*padding-right: 4vh;*/
+}
+
+/* SECTIONS */
+
+.base {
+	background-color: #39395f;
+	height: auto;
+	width: auto;
+	min-height: 100vh;
+	color: white;
+}
+
+.weather-section {
+	height: 100vh;
+}
+
+.dark {
+	color: #a9c25d;
+}
+
+.section {
+	font-size: 1.5rem;
+}
+
+.delete {
+	background-color: #39395f;
+	color: #416a59;
+	border: none;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.delete:hover {
+	background-color: transparent;
+	color: white;
+	transform: none;
+	border-radius: 50%;
+}
+
+.delete:active {
+	color: gray;
+}
