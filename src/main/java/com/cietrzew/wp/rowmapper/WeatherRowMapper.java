@@ -1,21 +1,16 @@
 package com.cietrzew.wp.rowmapper;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
+import com.cietrzew.wp.api.*;
+import com.cietrzew.wp.service.DateService;
+import com.cietrzew.wp.service.DateServiceImpl;
 import org.springframework.jdbc.core.RowMapper;
 
-import com.cietrzew.wp.api.Weather;
-import com.cietrzew.wp.api.WeatherMain;
-import com.cietrzew.wp.api.WeatherRain;
-import com.cietrzew.wp.api.WeatherSnow;
-import com.cietrzew.wp.api.WeatherWeather;
-import com.cietrzew.wp.api.WeatherWind;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class WeatherRowMapper implements RowMapper<Weather> {
+
+	DateService dateService = new DateServiceImpl();
 
 	@Override
 	public Weather mapRow(ResultSet rs, int rowNum) throws SQLException {
@@ -45,19 +40,8 @@ public class WeatherRowMapper implements RowMapper<Weather> {
 		WeatherSnow weatherSnow = new WeatherSnow();
 		weatherSnow.setOneHour(rs.getFloat("snow"));
 		weather.setSnow(weatherSnow);
-		
-		SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
-		Date d = null;
-		try {
-			d = sdf.parse(rs.getString("date"));
-		} catch (ParseException e1) {
-			e1.printStackTrace();
-		} catch (SQLException e1) {
-			e1.printStackTrace();
-		}
-		sdf.applyPattern("dd-MM-yyyy HH:mm:ss");
 
-		weather.setDate(sdf.format(d));
+		weather.setDate(dateService.parseDate(rs.getString("date")));
 		weather.setCity(rs.getString("city"));
 
 		return weather;

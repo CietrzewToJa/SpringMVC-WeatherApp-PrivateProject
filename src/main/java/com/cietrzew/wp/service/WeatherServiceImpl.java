@@ -4,6 +4,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
+import com.cietrzew.wp.api.WeatherRain;
+import com.cietrzew.wp.api.WeatherSnow;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,6 +18,9 @@ public class WeatherServiceImpl implements WeatherService {
 	@Autowired
 	private WeatherDAO weatherDAO;
 
+	@Autowired
+	private DateService dateService;
+
 	@Override
 	public Weather loadWeatherFromAPI(String location) {
 		
@@ -23,11 +28,11 @@ public class WeatherServiceImpl implements WeatherService {
 
 		if(weather == null) {
 			return null;
+		} else {
+			weather.resetNullValues();
 		}
 		
-		SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
-		Date date = new Date(System.currentTimeMillis());
-		weather.setDate(formatter.format(date));
+		weather.setDate(dateService.getActualDate());
 		
 		return weather;
 	}
@@ -43,5 +48,11 @@ public class WeatherServiceImpl implements WeatherService {
 		
 		weatherDAO.saveWeather(weather);
 	}
+
+	@Override
+	public void deleteWeather(String city, String date) {
+		weatherDAO.deleteWeather(city, date);
+	}
+
 
 }

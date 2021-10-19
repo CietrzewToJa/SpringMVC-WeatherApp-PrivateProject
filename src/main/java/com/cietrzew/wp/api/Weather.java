@@ -124,6 +124,17 @@ public class Weather {
 	public void setSnow(WeatherSnow snow) {
 		this.snow = snow;
 	}
+	public void resetNullValues() {
+		if(rain == null) {
+			rain = new WeatherRain();
+			rain.setOneHour(0);
+		}
+		if(snow == null) {
+			snow = new WeatherSnow();
+			snow.setOneHour(0);
+		}
+
+	}
 	
 	@Override
 	public String toString() {

@@ -6,6 +6,8 @@ body {
 	background-color: #f5eec2;
 	color: #416a59;
 	font-size: 12px;
+	margin: 20px 0 0;
+	/*padding: 20px 0 0;*/
 }
 
 .row {
@@ -30,7 +32,16 @@ h2 {
 	margin-bottom: 5vh;
 }
 
+a {
+	text-decoration: none;
+}
+
 /* BUTTONS */
+
+.arrow-back {
+	padding-left: 8px;
+	/*align-self: center;*/
+}
 
 .go-field {
 	padding: 0;
@@ -55,7 +66,7 @@ h2 {
 }
 
 .return-button {
-	margin: 20px 0px 0px 20px;
+	/*margin: 20px 0px 0px 20px;*/
 }
 
 .purple-button {
@@ -67,7 +78,7 @@ h2 {
 }
 
 .form-control {
-	border-radius: 20px 0px 0px 20px;
+	border-radius: 5px 0px 0px 5px;
 	border-right-color: white;
 }
 
@@ -114,7 +125,8 @@ thead {
 }
 
 .weather-section {
-	height: 100vh;
+	min-height: 100vh;
+	padding-bottom: 20px;
 }
 
 .dark {

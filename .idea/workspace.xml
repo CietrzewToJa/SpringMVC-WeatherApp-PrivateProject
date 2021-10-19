@@ -9,14 +9,71 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f611039a-20c2-4935-9beb-2b81e8cf1b87" name="Changes" comment="data source" />
+    <list default="true" id="f611039a-20c2-4935-9beb-2b81e8cf1b87" name="Changes" comment="data source">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/service/DateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/service/DateServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/DAO/WeatherDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/DAO/WeatherDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/DAO/WeatherDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/DAO/WeatherDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/api/RequestInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/api/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/api/Weather.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/api/WeatherRain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/api/WeatherRain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/config/WeatherAppAppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/config/WeatherAppAppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/controllers/WAController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/controllers/WAController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/rowmapper/WeatherRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/rowmapper/WeatherRowMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/service/WeatherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/service/WeatherService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/service/WeatherServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/service/WeatherServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/show-weather.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/show-weather.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/my-style-sheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/my-style-sheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cietrzew/wp/DAO/WeatherDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cietrzew/wp/DAO/WeatherDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cietrzew/wp/DAO/WeatherDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cietrzew/wp/DAO/WeatherDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cietrzew/wp/api/RequestInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cietrzew/wp/api/Weather.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cietrzew/wp/api/Weather.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cietrzew/wp/api/WeatherRain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cietrzew/wp/api/WeatherRain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cietrzew/wp/config/WeatherAppAppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cietrzew/wp/config/WeatherAppAppConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cietrzew/wp/controllers/WAController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cietrzew/wp/controllers/WAController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cietrzew/wp/rowmapper/WeatherRowMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cietrzew/wp/rowmapper/WeatherRowMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cietrzew/wp/service/WeatherService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cietrzew/wp/service/WeatherService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cietrzew/wp/service/WeatherServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cietrzew/wp/service/WeatherServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/css/my-style-sheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/css/my-style-sheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/com/cietrzew/wp/DAO/WeatherDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/com/cietrzew/wp/DAO/WeatherDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/com/cietrzew/wp/DAO/WeatherDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/com/cietrzew/wp/DAO/WeatherDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/com/cietrzew/wp/api/RequestInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/com/cietrzew/wp/api/Weather.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/com/cietrzew/wp/api/Weather.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/com/cietrzew/wp/api/WeatherRain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/com/cietrzew/wp/api/WeatherRain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/com/cietrzew/wp/config/WeatherAppAppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/com/cietrzew/wp/config/WeatherAppAppConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/com/cietrzew/wp/controllers/WAController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/com/cietrzew/wp/controllers/WAController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/com/cietrzew/wp/rowmapper/WeatherRowMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/com/cietrzew/wp/rowmapper/WeatherRowMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/com/cietrzew/wp/service/WeatherService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/com/cietrzew/wp/service/WeatherService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/com/cietrzew/wp/service/WeatherServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/com/cietrzew/wp/service/WeatherServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/css/my-style-sheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/css/my-style-sheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/weather-app/WEB-INF/view/show-weather.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/weather-app/WEB-INF/view/show-weather.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/weather-app/resources/css/my-style-sheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/weather-app/resources/css/my-style-sheet.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -31,8 +88,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -169,7 +228,7 @@
       <option name="presentableId" value="Default" />
       <updated>1633679902060</updated>
       <workItem from="1633679903914" duration="701000" />
-      <workItem from="1634117540737" duration="30995000" />
+      <workItem from="1634117540737" duration="53602000" />
     </task>
     <task id="LOCAL-00001" summary="ver and var">
       <created>1634550992497</created>
@@ -241,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634557969981</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="data source">
+      <created>1634558159233</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1634558159233</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

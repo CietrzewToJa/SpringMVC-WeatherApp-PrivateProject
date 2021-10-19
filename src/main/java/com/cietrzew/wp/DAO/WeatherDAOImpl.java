@@ -3,10 +3,15 @@ package com.cietrzew.wp.DAO;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.List;
 
+import com.cietrzew.wp.api.WeatherRain;
+import com.cietrzew.wp.api.WeatherSnow;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
 import com.cietrzew.wp.api.Weather;
@@ -33,15 +38,14 @@ public class WeatherDAOImpl implements WeatherDAO {
 		
 		ObjectMapper objectMapper = new ObjectMapper();
 		objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-		
+
 		try {
 			weather = objectMapper.readValue(url, Weather.class);
 		} catch (IOException e) {
 			weather = null;
 			return weather;
-			// e.printStackTrace();
 		}
-				
+
 		return weather;
 	}
 
@@ -58,9 +62,7 @@ public class WeatherDAOImpl implements WeatherDAO {
 	@Override
 	public void saveWeather(Weather weather) {
 
-		System.out.println(weather.getDate());
-		
-		Object[] sqlParameters = { weather.getDate(), 
+		Object[] sqlParameters = { weather.getDate(),
 				weather.getWeather()[0].getDescription(), 
 				weather.getMain().getTemp(), 
 				weather.getMain().getFeels_like(), 
@@ -69,15 +71,34 @@ public class WeatherDAOImpl implements WeatherDAO {
 				weather.getWind().getSpeed(), 
 				weather.getRain().getOneHour(), 
 				weather.getSnow().getOneHour(), 
-				weather.getCity() };
+				weather.getCity()
+		};
+
+		String sql = "SELECT date FROM weather WHERE date='" + weather.getDate() + "'";
+
+		List<String> dateList = jdbcTemplate.query(sql, new RowMapper<String>() {
+			@Override
+			public String mapRow(ResultSet resultSet, int i) throws SQLException {
+				return resultSet.getString(1);
+			}
+		});
+
+		if(dateList.isEmpty()) {
+			sql = "INSERT INTO weather (date, sky, temp, feels_like, pressure, humidity, wind, rain, snow, city) VALUES(?,?,?,?,?,?,?,?,?,?)";
+
+			int n = jdbcTemplate.update(sql, sqlParameters);
+		}
 		
-		String sql = "INSERT INTO weather (date, sky, temp, feels_like, pressure, humidity, wind, rain, snow, city) VALUES(?,?,?,?,?,?,?,?,?,?)";
-		
-		int n = jdbcTemplate.update(sql, sqlParameters);
-		
-		System.out.print(n + " ");
-		
-		System.out.println("Data Saved.");
+
+
+	}
+
+	@Override
+	public void deleteWeather(String city, String date) {
+
+		String sql = "DELETE FROM weather WHERE city=? AND date=?";
+
+		int n = jdbcTemplate.update(sql, city, date);
 	}
 
 }

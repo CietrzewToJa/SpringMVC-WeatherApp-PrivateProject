@@ -9,4 +9,5 @@ public interface WeatherDAO {
 	Weather loadWeatherFromAPI(String location);
 	List<Weather> loadWeather(String location);
 	void saveWeather(Weather weather);
+	void deleteWeather(String city, String date);
 }

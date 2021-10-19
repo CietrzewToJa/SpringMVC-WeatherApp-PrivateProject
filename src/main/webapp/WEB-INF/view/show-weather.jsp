@@ -25,7 +25,7 @@
         <div class="col-4">
             <form action="<c:url value="/" />" method="GET">
                 <button type="submit" class="btn btn-success return-button purple-button menu-button">
-                    <i class="material-icons d-flex justify-content-center">arrow_back_ios</i>
+                    <i class="material-icons d-flex justify-content-center arrow-back">arrow_back_ios</i>
                 </button>
             </form>
         </div>
@@ -94,7 +94,7 @@
                 </button>
             </form:form>
 
-            <a href="#lol">
+            <a href="#basse-nav">
                 <button class="btn btn-success right-field menu-button">
                     <i class="material-icons d-flex justify-content-center">expand_more</i>
                 </button>
@@ -105,51 +105,54 @@
     </div>
 </div>
 
-<div class="container-fluid base section" id="lol">
+<div class="container-fluid base section" id="basse-nav">
 
     <div class="container">
         <div class="row">
-        <h2 class="dark">${weather.city} - weather in base</h2>
+            <h2 class="dark">${weather.city} - weather in base</h2>
         </div>
 
         <div class="row table-responsive">
-        <table class="table">
+            <table class="table">
 
-            <thead>
-            <tr>
-                <td>Date</td>
-                <td>Sky</td>
-                <td>Temperature</td>
-                <td>Sensed temperature</td>
-                <td>Pressure</td>
-                <td>Humidity</td>
-                <td>Wind</td>
-                <td>Rain</td>
-                <td>Snow</td>
-                <td></td>
-            </tr>
-            </thead>
-
-            <c:forEach var="weather" items="${weatherList}">
+                <thead>
                 <tr>
-                    <td>${weather.date}</td>
-                    <td>${weather.weather[0].description}</td>
-                    <td>${weather.main.temp}</td>
-                    <td>${weather.main.feels_like}</td>
-                    <td>${weather.main.pressure}</td>
-                    <td>${weather.main.humidity}</td>
-                    <td>${weather.wind.speed}</td>
-                    <td>${weather.rain.oneHour}</td>
-                    <td>${weather.snow.oneHour}</td>
-                    <td>
-                        <button class="delete">
-                            <i class="material-icons d-flex justify-content-center">remove_circle_outline</i>
-                        </button>
-                    </td>
+                    <td>Date</td>
+                    <td>Sky</td>
+                    <td>Temperature</td>
+                    <td>Sensed temperature</td>
+                    <td>Pressure</td>
+                    <td>Humidity</td>
+                    <td>Wind</td>
+                    <td>Rain</td>
+                    <td>Snow</td>
+                    <td></td>
                 </tr>
-            </c:forEach>
+                </thead>
 
-        </table>
+                <c:forEach var="weather" items="${weatherList}">
+
+                    <tr>
+                        <td>${weather.date}</td>
+                        <td>${weather.weather[0].description}</td>
+                        <td>${weather.main.temp}</td>
+                        <td>${weather.main.feels_like}</td>
+                        <td>${weather.main.pressure}</td>
+                        <td>${weather.main.humidity}</td>
+                        <td>${weather.wind.speed}</td>
+                        <td>${weather.rain.oneHour}</td>
+                        <td>${weather.snow.oneHour}</td>
+                        <td>
+                            <a href="/weather_app_war_exploded/delete-weather?city=${weather.city}&date=${weather.date}#basse-nav" class="delete">
+                                <i class="material-icons d-flex justify-content-center">remove_circle_outline</i>
+                            </a>
+                        </td>
+
+
+                    </tr>
+                </c:forEach>
+
+            </table>
         </div>
     </div>
 </div>
