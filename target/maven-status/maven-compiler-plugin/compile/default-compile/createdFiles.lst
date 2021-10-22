@@ -6,13 +6,15 @@ com\cietrzew\wp\api\WeatherWind.class
 com\cietrzew\wp\api\WeatherSnow.class
 com\cietrzew\wp\api\WeatherWeather.class
 com\cietrzew\wp\api\WeatherClouds.class
+com\cietrzew\wp\service\DateService.class
 com\cietrzew\wp\api\WeatherSys.class
 com\cietrzew\wp\DAO\WeatherDAO.class
 com\cietrzew\wp\config\WeatherAppAppConfig.class
 com\cietrzew\wp\DAO\WeatherDAOImpl.class
+com\cietrzew\wp\DAO\WeatherDAOImpl$1.class
+com\cietrzew\wp\service\DateServiceImpl.class
 com\cietrzew\wp\service\WeatherServiceImpl.class
 com\cietrzew\wp\api\WeatherMain.class
-com\cietrzew\wp\api\RequestInfo.class
 com\cietrzew\wp\api\Weather.class
 com\cietrzew\wp\config\WeatherAppApplicationInitializer.class
 com\cietrzew\wp\api\WeatherRain.class

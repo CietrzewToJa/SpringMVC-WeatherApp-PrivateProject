@@ -1,12 +1,13 @@
 package com.cietrzew.wp.service;
 
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-@Service
+@Component
 public class DateServiceImpl implements DateService {
 
     @Override

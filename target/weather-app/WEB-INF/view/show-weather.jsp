@@ -89,13 +89,13 @@
                 <form:hidden path="city"/>
                 <form:hidden path="date"/>
 
-                <button type="submit" class="btn btn-success left-field purple-button menu-button">
+                <button type="submit" class="btn btn-success left-field purple-button menu-button" data-bs-toggle="tooltip" data-bs-placement="top" title="Save">
                     <i class="material-icons d-flex justify-content-center">save</i>
                 </button>
             </form:form>
 
             <a href="#basse-nav">
-                <button class="btn btn-success right-field menu-button">
+                <button class="btn btn-success right-field menu-button" data-bs-toggle="tooltip" data-bs-placement="top" title="Scroll down">
                     <i class="material-icons d-flex justify-content-center">expand_more</i>
                 </button>
             </a>

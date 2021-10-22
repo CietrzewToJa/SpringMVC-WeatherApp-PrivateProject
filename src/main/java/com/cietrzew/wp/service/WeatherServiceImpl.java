@@ -1,25 +1,23 @@
 package com.cietrzew.wp.service;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.List;
-
-import com.cietrzew.wp.api.WeatherRain;
-import com.cietrzew.wp.api.WeatherSnow;
+import com.cietrzew.wp.DAO.WeatherDAO;
+import com.cietrzew.wp.api.Weather;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.cietrzew.wp.DAO.WeatherDAO;
-import com.cietrzew.wp.api.Weather;
+import java.util.List;
 
 @Service
 public class WeatherServiceImpl implements WeatherService {
 	
-	@Autowired
 	private WeatherDAO weatherDAO;
+	private DateService dateService;
 
 	@Autowired
-	private DateService dateService;
+	public void WeatherServiceImpl(DateService dateService, WeatherDAO weatherDAO) {
+		this.weatherDAO = weatherDAO;
+		this.dateService = dateService;
+	}
 
 	@Override
 	public Weather loadWeatherFromAPI(String location) {

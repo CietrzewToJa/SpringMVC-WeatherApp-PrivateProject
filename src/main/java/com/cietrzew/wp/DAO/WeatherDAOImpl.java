@@ -5,11 +5,14 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Date;
 import java.util.List;
 
 import com.cietrzew.wp.api.WeatherRain;
 import com.cietrzew.wp.api.WeatherSnow;
+import com.cietrzew.wp.service.DateService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
@@ -22,8 +25,17 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @Repository
 public class WeatherDAOImpl implements WeatherDAO {
 	
-	@Autowired
 	private JdbcTemplate jdbcTemplate;
+	private WeatherRowMapper weatherRowMapper;
+
+	@Autowired
+	public void weatherDAOimpl(JdbcTemplate jdbcTemplate, WeatherRowMapper weatherRowMapper) {
+		this.jdbcTemplate = jdbcTemplate;
+		this.weatherRowMapper = weatherRowMapper;
+	}
+
+	@Value("${weather-api.key}")
+	String apiKey;
 	
 	@Override
 	public Weather loadWeatherFromAPI(String location) {
@@ -31,7 +43,7 @@ public class WeatherDAOImpl implements WeatherDAO {
 		URL url = null;
 		Weather weather = null;
 		try {
-			url = new URL("http://api.openweathermap.org/data/2.5/weather?q=" + location + "&units=metric&appid=09a5062ab95e415e71d251e55884c81f");
+			url = new URL("http://api.openweathermap.org/data/2.5/weather?q=" + location + "&units=metric&appid=" + apiKey);
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		}
@@ -54,7 +66,7 @@ public class WeatherDAOImpl implements WeatherDAO {
 		
 		String sql = "SELECT * FROM weather WHERE city='" + location + "'";
 		
-		List<Weather> theListOfWeather = jdbcTemplate.query(sql, new WeatherRowMapper());
+		List<Weather> theListOfWeather = jdbcTemplate.query(sql, weatherRowMapper);
 		
 		return theListOfWeather;
 	}

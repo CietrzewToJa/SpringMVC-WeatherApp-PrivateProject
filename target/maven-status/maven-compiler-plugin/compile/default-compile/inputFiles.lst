@@ -3,6 +3,7 @@ C:\Users\macie\IdeaProjects\Spring-MVC-show-weather-app\src\main\java\com\cietrz
 C:\Users\macie\IdeaProjects\Spring-MVC-show-weather-app\src\main\java\com\cietrzew\wp\api\WeatherSys.java
 C:\Users\macie\IdeaProjects\Spring-MVC-show-weather-app\src\main\java\com\cietrzew\wp\service\WeatherServiceImpl.java
 C:\Users\macie\IdeaProjects\Spring-MVC-show-weather-app\src\main\java\com\cietrzew\wp\api\WeatherSnow.java
+C:\Users\macie\IdeaProjects\Spring-MVC-show-weather-app\src\main\java\com\cietrzew\wp\service\DateServiceImpl.java
 C:\Users\macie\IdeaProjects\Spring-MVC-show-weather-app\src\main\java\com\cietrzew\wp\config\WeatherAppAppConfig.java
 C:\Users\macie\IdeaProjects\Spring-MVC-show-weather-app\src\main\java\com\cietrzew\wp\DAO\WeatherDAOImpl.java
 C:\Users\macie\IdeaProjects\Spring-MVC-show-weather-app\src\main\java\com\cietrzew\wp\api\WeatherMain.java
@@ -14,5 +15,5 @@ C:\Users\macie\IdeaProjects\Spring-MVC-show-weather-app\src\main\java\com\cietrz
 C:\Users\macie\IdeaProjects\Spring-MVC-show-weather-app\src\main\java\com\cietrzew\wp\config\WeatherAppApplicationInitializer.java
 C:\Users\macie\IdeaProjects\Spring-MVC-show-weather-app\src\main\java\com\cietrzew\wp\service\WeatherService.java
 C:\Users\macie\IdeaProjects\Spring-MVC-show-weather-app\src\main\java\com\cietrzew\wp\api\WeatherWeather.java
-C:\Users\macie\IdeaProjects\Spring-MVC-show-weather-app\src\main\java\com\cietrzew\wp\api\RequestInfo.java
 C:\Users\macie\IdeaProjects\Spring-MVC-show-weather-app\src\main\java\com\cietrzew\wp\api\WeatherCoord.java
+C:\Users\macie\IdeaProjects\Spring-MVC-show-weather-app\src\main\java\com\cietrzew\wp\service\DateService.java
