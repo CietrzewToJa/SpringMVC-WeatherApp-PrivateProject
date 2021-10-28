@@ -10,111 +10,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f611039a-20c2-4935-9beb-2b81e8cf1b87" name="Changes" comment="last changes">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/weather_app_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/weather_app_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_2_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_2_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_2_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_2_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_3_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_2_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_11_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_11_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_2_2_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_3_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_10_2021_11_53_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_10_2021_11_53__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/DAO/WeatherDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/DAO/WeatherDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/config/WeatherAppAppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/config/WeatherAppAppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/controllers/WAController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/controllers/WAController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/rowmapper/WeatherRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/rowmapper/WeatherRowMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/service/DateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/service/DateService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/service/DateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/service/DateServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/service/WeatherServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cietrzew/wp/service/WeatherServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/home-page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/home-page.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/show-weather.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/show-weather.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cietrzew/wp/DAO/WeatherDAOImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cietrzew/wp/DAO/WeatherDAOImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cietrzew/wp/DAO/WeatherDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cietrzew/wp/DAO/WeatherDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cietrzew/wp/config/WeatherAppAppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cietrzew/wp/config/WeatherAppAppConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cietrzew/wp/controllers/WAController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cietrzew/wp/controllers/WAController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cietrzew/wp/rowmapper/WeatherRowMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cietrzew/wp/rowmapper/WeatherRowMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cietrzew/wp/service/DateServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cietrzew/wp/service/DateServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cietrzew/wp/service/WeatherServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cietrzew/wp/service/WeatherServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/css/my-style-sheet.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/META-INF/maven/com.cietrzew/weather-app/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/META-INF/maven/com.cietrzew/weather-app/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/META-INF/war-tracker" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/com/cietrzew/wp/DAO/WeatherDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/com/cietrzew/wp/DAO/WeatherDAOImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/com/cietrzew/wp/api/RequestInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/com/cietrzew/wp/api/Weather.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/com/cietrzew/wp/api/WeatherClouds.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/com/cietrzew/wp/api/WeatherCoord.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/com/cietrzew/wp/api/WeatherMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/com/cietrzew/wp/api/WeatherRain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/com/cietrzew/wp/api/WeatherSnow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/com/cietrzew/wp/api/WeatherSys.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/com/cietrzew/wp/api/WeatherWeather.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/com/cietrzew/wp/api/WeatherWind.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/com/cietrzew/wp/config/WeatherAppAppConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/com/cietrzew/wp/config/WeatherAppApplicationInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/com/cietrzew/wp/controllers/WAController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/com/cietrzew/wp/rowmapper/WeatherRowMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/com/cietrzew/wp/service/WeatherService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/classes/com/cietrzew/wp/service/WeatherServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/lib/jackson-annotations-2.11.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/lib/jackson-core-2.11.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/lib/jackson-databind-2.11.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/lib/json-20210307.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/lib/mysql-connector-java-8.0.21.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/lib/protobuf-java-3.11.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/lib/spring-aop-5.2.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/lib/spring-beans-5.2.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/lib/spring-context-5.2.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/lib/spring-core-5.2.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/lib/spring-expression-5.2.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/lib/spring-jcl-5.2.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/lib/spring-jdbc-5.2.11.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/lib/spring-tx-5.2.11.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/lib/spring-web-5.2.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/lib/spring-webmvc-5.2.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/view/home-page.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/WEB-INF/view/show-weather.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat.8080/webapps/expanded/resources/css/my-style-sheet.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/weather-app.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/weather-app.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/com/cietrzew/wp/DAO/WeatherDAOImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/com/cietrzew/wp/DAO/WeatherDAOImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/com/cietrzew/wp/DAO/WeatherDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/com/cietrzew/wp/DAO/WeatherDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/com/cietrzew/wp/config/WeatherAppAppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/com/cietrzew/wp/config/WeatherAppAppConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/com/cietrzew/wp/controllers/WAController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/com/cietrzew/wp/controllers/WAController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/com/cietrzew/wp/rowmapper/WeatherRowMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/com/cietrzew/wp/rowmapper/WeatherRowMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/com/cietrzew/wp/service/DateServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/com/cietrzew/wp/service/DateServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/com/cietrzew/wp/service/WeatherServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/com/cietrzew/wp/service/WeatherServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/weather-app/WEB-INF/classes/css/my-style-sheet.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/weather-app/WEB-INF/lib/postgresql-42.2.24.jre6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/weather-app/WEB-INF/lib/spring-aop-5.2.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/weather-app/WEB-INF/lib/spring-beans-5.2.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/weather-app/WEB-INF/lib/spring-context-5.2.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/weather-app/WEB-INF/lib/spring-core-5.2.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/weather-app/WEB-INF/lib/spring-expression-5.2.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/weather-app/WEB-INF/lib/spring-jcl-5.2.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/weather-app/WEB-INF/lib/spring-jdbc-5.2.11.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/weather-app/WEB-INF/lib/spring-tx-5.2.11.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/weather-app/WEB-INF/lib/spring-web-5.2.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/weather-app/WEB-INF/lib/spring-webmvc-5.2.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/weather-app/WEB-INF/view/home-page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/weather-app/WEB-INF/view/home-page.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/weather-app/WEB-INF/view/show-weather.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/weather-app/WEB-INF/view/show-weather.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,7 +194,9 @@
       <workItem from="1634900042816" duration="563000" />
       <workItem from="1634900640778" duration="265000" />
       <workItem from="1634900930387" duration="345000" />
-      <workItem from="1634901299330" duration="6012000" />
+      <workItem from="1634901299330" duration="6615000" />
+      <workItem from="1635177799408" duration="873000" />
+      <workItem from="1635253390421" duration="4399000" />
     </task>
     <task id="LOCAL-00001" summary="ver and var">
       <created>1634550992497</created>
